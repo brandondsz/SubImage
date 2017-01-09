@@ -31,9 +31,9 @@ void moveAroundObject(int startCol, int startRow);
 int main() {
 
 
-	imgOriginal = cv::imread("3.png");
+	imgOriginal = cv::imread("Player.png");
 
-	imgGrayscale = cv::imread("3.png", 0);
+	imgGrayscale = cv::imread("Player.png", 0);
 	
 	//Add padding around the image
 	copyMakeBorder(imgGrayscale, imgGrayscale, 2, 2, 2, 2, BORDER_CONSTANT, Scalar(255, 255, 255));
